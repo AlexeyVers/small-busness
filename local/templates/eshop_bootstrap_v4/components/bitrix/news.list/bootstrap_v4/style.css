@@ -1,0 +1,11 @@
+.normal-width {
+    width: 22%;
+    flex: 0 1 auto;
+    box-sizing: border-box;
+    margin: 0 0 10px 10px;
+    padding-top: 10px;
+}
+
+.card-title {
+    font-weight: 700;
+}
