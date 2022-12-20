@@ -36,7 +36,7 @@ $APPLICATION->SetTitle("Блог интернет магазина");
         "HIDE_LINK_WHEN_NO_DETAIL"        => "N",
         "IBLOCK_ID"                       => "4",
         "IBLOCK_TYPE"                     => "blog",
-        "INCLUDE_IBLOCK_INTO_CHAIN"       => "Y",
+        "INCLUDE_IBLOCK_INTO_CHAIN"       => "N",
         "LIST_ACTIVE_DATE_FORMAT"         => "d.m.Y",
         "LIST_FIELD_CODE"                 => [],
         "LIST_PROPERTY_CODE"              => ["DATE_CREATE"],
