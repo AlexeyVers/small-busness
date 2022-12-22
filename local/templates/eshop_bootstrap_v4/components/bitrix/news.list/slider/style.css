@@ -1,15 +1,10 @@
-.card {
-    width: 700px;
-    box-sizing: border-box;
-}
-
 .card-title {
     font-weight: 700;
 }
 
 .slider {
     z-index: 9;
-    width: 700px;
+    width: 500px;
 
     overflow: hidden;
     margin: 0 0 7px;

@@ -1,20 +1,22 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
+$APPLICATION->SetTitle("Главная");
+
+$GLOBALS['arrFilter'] = array('PROPERTY_VIDNO_NOWOST_VALUE' => 'Да' );
+
 ?>
-<br>
 <? $APPLICATION->IncludeComponent(
     "bitrix:news",
     "slider",
     [
-        "ADD_ELEMENT_CHAIN"               => "N",
+        "ADD_ELEMENT_CHAIN"               => "Y",
         "ADD_SECTIONS_CHAIN"              => "Y",
         "AJAX_MODE"                       => "N",
         "AJAX_OPTION_ADDITIONAL"          => "",
         "AJAX_OPTION_HISTORY"             => "N",
         "AJAX_OPTION_JUMP"                => "N",
         "AJAX_OPTION_STYLE"               => "Y",
-        "BROWSER_TITLE"                   => "-",
+        "BROWSER_TITLE"                   => "Главаная",
         "CACHE_FILTER"                    => "N",
         "CACHE_GROUPS"                    => "Y",
         "CACHE_TIME"                      => "36000000",
@@ -52,12 +54,12 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
         "PAGER_SHOW_ALL"                  => "N",
         "PAGER_SHOW_ALWAYS"               => "N",
         "PAGER_TEMPLATE"                  => ".default",
-        "PAGER_TITLE"                     => "Новости",
+        "PAGER_TITLE"                     => "Главная",
         "PREVIEW_TRUNCATE_LEN"            => "",
         "SEF_MODE"                        => "N",
         "SET_LAST_MODIFIED"               => "N",
         "SET_STATUS_404"                  => "N",
-        "SET_TITLE"                       => "Y",
+        "SET_TITLE"                       => "N",
         "SHOW_404"                        => "N",
         "SORT_BY1"                        => "ACTIVE_FROM",
         "SORT_BY2"                        => "SORT",
@@ -65,7 +67,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
         "SORT_ORDER2"                     => "ASC",
         "STRICT_SECTION_CHECK"            => "N",
         "USE_CATEGORIES"                  => "N",
-        "USE_FILTER"                      => "N",
+        "USE_FILTER"                      => "Y",
         "USE_PERMISSIONS"                 => "N",
         "USE_RATING"                      => "N",
         "USE_REVIEW"                      => "N",
@@ -73,6 +75,8 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
         "USE_SEARCH"                      => "N",
         "USE_SHARE"                       => "N",
         "VARIABLE_ALIASES"                => ["ELEMENT_ID" => "ELEMENT_ID", "SECTION_ID" => "SECTION_ID"],
+
+        "FILTER_NAME"                     => "arrFilter",
     ]
 ); ?><br>
 <? $APPLICATION->IncludeComponent(
