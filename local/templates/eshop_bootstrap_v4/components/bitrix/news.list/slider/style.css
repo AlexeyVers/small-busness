@@ -4,7 +4,7 @@
 
 .slider {
     z-index: 9;
-    width: 500px;
+    width: 700px;
 
     overflow: hidden;
     margin: 0 0 7px;
@@ -13,6 +13,7 @@
 
 .slider ul,
 .slider li {
+    width: 700px;
     padding: 0;
     margin: 0;
     list-style-type: none;
