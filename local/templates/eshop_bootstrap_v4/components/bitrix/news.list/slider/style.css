@@ -2,9 +2,11 @@
     width: 700px;
     box-sizing: border-box;
 }
+
 .card-title {
     font-weight: 700;
 }
+
 .slider {
     z-index: 9;
     width: 700px;
@@ -13,29 +15,35 @@
     margin: 0 0 7px;
     position: relative;
 }
+
 .slider ul,
 .slider li {
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
+
 .slider ul {
     width: 9999px;
 }
+
 .slider ul li {
     list-style-type: none;
     float: left;
     width: 700px;
 }
+
 .slider ul {
     display: flex;
     padding-bottom: 40px;
 }
+
 .slider .nav {
     position: absolute;
     left: 15px;
     bottom: 12px;
 }
+
 .slider .nav span {
     opacity: 0.9;
     background: #fff;
@@ -47,9 +55,9 @@
     overflow: hidden;
     display: block;
     float: left;
-    box-shadow: 0 1px 2px #000;
+    box-shadow: 0 1px 3px #000;
 }
+
 .slider .nav span.on {
     background: #2e9419;
 }
-
